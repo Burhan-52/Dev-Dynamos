@@ -1,0 +1,24 @@
+.img{
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+}
+.sidebar{
+    display: flex;
+    align-items: center;
+    margin: 0px;
+}
+.sidebar-container{
+    width: 200px;
+    height: 95vh;
+    background-color: rgb(230, 230, 230);
+}
+.main-container-dashboard{
+    display: flex ;
+}
+
+.App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  

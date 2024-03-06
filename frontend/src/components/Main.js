@@ -4,8 +4,10 @@ import CompanyList from "./CompanyList";
 
 const Main = () => {
   return (
-    <div>
-      <SideBar />
+    <div className="main-container-dashboard">
+      <div>
+        <SideBar />
+      </div>
       <div>
         <CompanyList />
       </div>

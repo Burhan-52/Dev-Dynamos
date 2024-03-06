@@ -5,7 +5,7 @@ import Main from '../components/Main'
 const Dashboard = () => {
   return (
     <div className='main-container'>
-        <AppBar/>
+
         <Main/>
     </div>
   )

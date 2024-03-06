@@ -51,4 +51,4 @@ const ReactBigCalendar = () => {
   );
 };
 
-export default ReactBigCalendar;
+export default ReactBigCalendar;    

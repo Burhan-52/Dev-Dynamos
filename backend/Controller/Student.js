@@ -20,7 +20,7 @@ const register =async(req,res)=>{
     const name = firstname;
     const origin = 'localhost:8000';
     sendVerificationEmail({name,email,verificationToken,origin});
-    res.status(200).json('verification link is send to your email');
+    res.status(200).json({msg:'verification link is send to your email'});
 };
 
 const verifyEmail = async(req,res)=>{

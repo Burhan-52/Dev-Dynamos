@@ -3,7 +3,7 @@ import "../style/login.css";
 import { server } from "../config";
 import { useNavigate } from "react-router";
 
-const Login = () => {
+const AdminLogin = () => {
   const [studentLogin, setStudentLogin] = useState({
     email: "",
     password: "",
@@ -22,11 +22,11 @@ const Login = () => {
         }),
       };
 
-      const response = await fetch(`${server}/login`, requestOptions);
+      const response = await fetch(`${server}/loginadmin`, requestOptions);
       const data = await response.json();
       console.log(data)
       if(data){
-        navigate("/dashboard")
+        navigate("/")
       }
     } catch (error) {
       console.log(error);
@@ -37,7 +37,7 @@ const Login = () => {
     <>
       <form onSubmit={handleLogin}>
         <div class="container">
-          <h1>Login</h1>
+          <h1>Admin Login</h1>
           <div>
             <label for="email">Email:</label>
             <input
@@ -59,7 +59,6 @@ const Login = () => {
               }
               required
             />
-
             <button type="submit">Login</button>
           </div>
         </div>
@@ -68,4 +67,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default AdminLogin;
